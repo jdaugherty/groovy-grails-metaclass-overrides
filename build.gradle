@@ -91,3 +91,8 @@ assets {
     ]
 }
 
+tasks.withType(GroovyCompile).configureEach {
+    groovyOptions.with {
+        optimizationOptions.indy = false
+    }
+}
